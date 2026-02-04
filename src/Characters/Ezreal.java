@@ -1,3 +1,8 @@
+package src.Characters;
+
+import src.GameGUI;
+import src.PCharacter;
+
 public class Ezreal extends PCharacter{
   public Ezreal(){
     }
@@ -99,7 +104,7 @@ public class Ezreal extends PCharacter{
 
 
 
-
+/*
       public void turn(PCharacter other) {
         if (this.isDead() == false){
         if (this.isChanneling() == false && this.checkCC() == false){
@@ -148,4 +153,5 @@ public class Ezreal extends PCharacter{
           }
       
         }
+  */
 }

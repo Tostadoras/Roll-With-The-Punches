@@ -1,4 +1,7 @@
+package src.Characters;
 import javax.swing.JOptionPane;
+
+import src.PCharacter;
 
 public class BigMom extends PCharacter {
 

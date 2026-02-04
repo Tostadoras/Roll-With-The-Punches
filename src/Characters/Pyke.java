@@ -1,4 +1,8 @@
+package src.Characters;
 import javax.swing.JOptionPane;
+
+import src.GameGUI;
+import src.PCharacter;
 
 public class Pyke extends PCharacter {
     

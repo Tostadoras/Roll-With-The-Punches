@@ -1,3 +1,8 @@
+package src.Characters;
+
+import src.GameGUI;
+import src.PCharacter;
+
 public class Joe extends PCharacter{
   private double health = 15;
   private double max_health = 15;

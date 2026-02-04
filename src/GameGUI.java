@@ -1,6 +1,28 @@
+package src;
 import javax.swing.*;
 import javax.swing.border.EmptyBorder;
 import javax.swing.border.LineBorder;
+
+// Purely done for organizational purposes AKA making my repo look neat, 
+// I separated the individual character code from the two main files!
+import src.Characters.Aang;
+import src.Characters.Akali;
+import src.Characters.BigMom;
+import src.Characters.Ezreal;
+import src.Characters.Joe;
+import src.Characters.Junkrat;
+import src.Characters.Luffy;
+import src.Characters.MasterYi;
+import src.Characters.Nasus;
+import src.Characters.Pyke;
+import src.Characters.Rammus;
+import src.Characters.Smolder;
+import src.Characters.Steve;
+import src.Characters.Veigar;
+import src.Characters.Volibear;
+import src.Characters.Yami;
+import src.Characters.Zed;
+
 import java.awt.*;
 import java.io.PrintStream;
 import java.io.OutputStream;
@@ -86,7 +108,7 @@ public class GameGUI extends JFrame {
                 musicClip.stop();
             }
 
-            File musicDir = new File("Music");
+            File musicDir = new File("src/Music");
 
             // Safety check
             if (!musicDir.exists() || !musicDir.isDirectory()) {
@@ -166,7 +188,7 @@ public class GameGUI extends JFrame {
         randomBtn.setBorderPainted(false);
         // 2. IMAGE LOADING
         try {
-            File imgFile = new File("Random.jpeg"); 
+            File imgFile = new File("src/Random.jpeg"); 
             if (imgFile.exists()) {
                 Image img = ImageIO.read(imgFile);
                 Image resized = img.getScaledInstance(100, 100, Image.SCALE_SMOOTH);
@@ -238,7 +260,7 @@ public class GameGUI extends JFrame {
                 File imgFile = new File(name + ext); 
                 if (!imgFile.exists()) {
                      // Fallback to local project folder if absolute path fails
-                     imgFile = new File("images/" + name + ext);
+                     imgFile = new File("src/images/" + name + ext);
                 }
                 
                 if (imgFile.exists()) {

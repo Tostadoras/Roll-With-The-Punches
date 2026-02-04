@@ -1,3 +1,8 @@
+package src.Characters;
+
+import src.GameGUI;
+import src.PCharacter;
+
 public class Luffy extends PCharacter{
   public Luffy(){
     }

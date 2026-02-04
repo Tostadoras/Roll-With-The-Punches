@@ -1,4 +1,8 @@
-import javax.swing.JOptionPane; 
+package src.Characters;
+import javax.swing.JOptionPane;
+
+import src.GameGUI;
+import src.PCharacter; 
 
 public class Yami extends PCharacter {
     

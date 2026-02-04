@@ -1,5 +1,14 @@
+package src.Characters;
+
+import src.PCharacter;
+
 public class Sylas extends PCharacter{
 
+// I ended up never making Sylas because the most realistic way to
+// Create his ultimate would be to simply create a switch statement for every other
+// Character's ultimate (and then that could involve odd scenarios with stacking).
+// It would have ended up with him feeling very weak against characters with specific
+// Ultimates like Yami, unless I created a change in how it worked JUST FOR SYLAS
 
 public void autoAttack(PCharacter other) {
       System.out.println(this.getName() + " auto attacked!");
