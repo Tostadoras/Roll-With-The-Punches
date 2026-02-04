@@ -1,0 +1,27 @@
+public void moveOne(PCharacter other) {
+    System.out.println(this.getName() + " rolled a 1!");
+  }
+
+  public void moveTwo(PCharacter other) {
+    System.out.println(this.getName() + " rolled a 2!");
+  }
+
+  public void moveThree(PCharacter other) {
+    System.out.println(this.getName() + " rolled a 3!");
+  }
+
+  public void moveFour(PCharacter other) {
+    System.out.println(this.getName() + " rolled a 4!");
+  }
+
+  public void moveFive(PCharacter other) {
+    System.out.println(this.getName() + " rolled a 5!");
+  }
+
+  public void moveSix(PCharacter other) {
+    System.out.println(this.getName() + " rolled a 6!");
+  }
+  
+  public void moveSeven(PCharacter other) {
+    System.out.println("This is a placeholder. If you are seeing this, something is wrong with the channeling ability code");
+  }
