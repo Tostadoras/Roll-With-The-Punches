@@ -166,7 +166,7 @@ public class GameGUI extends JFrame {
         randomBtn.setBorderPainted(false);
         // 2. IMAGE LOADING
         try {
-            File imgFile = new File("random.jpg"); 
+            File imgFile = new File("Random.jpeg"); 
             if (imgFile.exists()) {
                 Image img = ImageIO.read(imgFile);
                 Image resized = img.getScaledInstance(100, 100, Image.SCALE_SMOOTH);
@@ -190,7 +190,6 @@ public class GameGUI extends JFrame {
         });
         
         characterGrid.add(randomBtn);
-        // --------------------------
         selectionPanel.add(characterGrid, BorderLayout.CENTER);
         mainContainer.add(selectionPanel, "SELECTION");
     }
@@ -236,7 +235,7 @@ public class GameGUI extends JFrame {
         for (String ext : extensions) {
             try {
                 // Tries absolute path first (as requested), falls back if needed
-                File imgFile = new File("FILEPATHUNTILCHARACTERNAME" + name + ext); 
+                File imgFile = new File(name + ext); 
                 if (!imgFile.exists()) {
                      // Fallback to local project folder if absolute path fails
                      imgFile = new File("images/" + name + ext);
